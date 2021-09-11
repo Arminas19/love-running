@@ -187,3 +187,19 @@ hr{
     color: #fafafa;
 }
 
+/*  Footer */
+footer{
+    height: 150px;
+}
+.Social-networks{
+    text-align: center;
+}
+.Social-networks > li{
+    display: inline;
+}
+.Social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}

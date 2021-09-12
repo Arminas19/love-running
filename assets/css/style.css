@@ -14,73 +14,89 @@ body {
 
 /* Headings and Logo*/
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
 }
-#Logo{
+
+#Logo {
     float: left;
     font-size: 280%;
     margin-left: 30px;
 }
+
 /*  Navigation Links */
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
-#menu, #logo{
+
+#menu,
+#logo {
     line-height: 75px;
 
 }
-#menu li{
+
+#menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
 }
+
 #menu a {
     text-decoration: none;
     color: inherit;
 }
-#menu a:hover{
+
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
-.active{
+
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Hero Image*/
-#hero-outer{
+#hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-#cover-text, #cover-text h2{
+
+#cover-text,
+#cover-text h2 {
     color: #fff;
 
 }
-#hero-image{
+
+#hero-image {
     height: 600px;
     width: 100%;
-    background: url('https://codeinstitute.s3.amazonaws.com/CSSEssentials/hero-image.webp') no-repeat center center; 
+    background: url('https://codeinstitute.s3.amazonaws.com/CSSEssentials/hero-image.webp') no-repeat center center;
 
     /* Animates zoom effect on loading screen */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
+
 /* Creates zoom effect for the hero image*/
 
 @keyframes hero-zoom {
-    from{
-transform: scale(1);
+    from {
+        transform: scale(1);
     }
-    to{
-transform: scale(1.1);
+
+    to {
+        transform: scale(1.1);
     }
 }
-#cover-text{
+
+#cover-text {
     font-size: 130%;
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -99,71 +115,84 @@ transform: scale(1.1);
 
     position: absolute;
 }
-/*  Club Ethos  */ 
-#club-ethos{
+
+/*  Club Ethos  */
+#club-ethos {
     height: 600px;
 }
-#left-about{
-padding-top: 30px;
-width: 33%;
-float: left;
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
 }
-#right-about{
-padding-top: 30px;
-width: 33%;
-float:right;
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
 }
-#center-about{
-width: 33%;
-margin: 0 auto;
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
 }
-hr{
+
+hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px;
 }
-.left-about-heading{
+
+.left-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
-.right-about-heading{
+
+.right-about-heading {
     width: 60%;
     float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
-.right-about-heading h2{
+
+.right-about-heading h2 {
     text-align: right;
 }
-.right-about-heading p{
+
+.right-about-heading p {
     text-align: right;
 }
-#welcome{
+
+#welcome {
     text-align: center;
     margin: 20px 0;
     font-size: 280%;
 
 }
-#circle-container{
+
+#circle-container {
     width: 300px;
     height: 300px;
-    padding:30px;
+    padding: 30px;
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
 }
-#circle-cover-bg{
-    background:url('https://codeinstitute.s3.amazonaws.com/CSSEssentials/ethos-center-image.jpg') no-repeat center center;
+
+#circle-cover-bg {
+    background: url('https://codeinstitute.s3.amazonaws.com/CSSEssentials/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
-#Times{
+
+#Times {
     background-image: url('../css/images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,116 +201,143 @@ hr{
     overflow: hidden;
 
 }
-#Times div{
+
+#Times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
-    float:left;
+    float: left;
     padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
 }
-#Times h2{
+
+#Times h2 {
     color: #fafafa;
 }
 
 /*  Footer */
-footer{
+footer {
     height: 150px;
 }
-.Social-networks{
+
+.Social-networks {
     text-align: center;
 }
-.Social-networks > li{
+
+.Social-networks>li {
     display: inline;
 }
-.Social-networks i{
+
+.Social-networks i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /*  Gallery */
-#photos{
+#photos {
     clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0;
 }
-#photos > img{
-width: 100%;
+
+#photos>img {
+    width: 100%;
 
 
 }
+
 /*  Media queries  */
 
 /* For larger to medium screen screens size from 1200px wide and down  */
-@media screen and ( max-width: 1200px) {
-    
-#club-ethos{
-width: 65%;
-height: 1200px;
-margin: 0 auto;
+@media screen and (max-width: 1200px) {
 
-}
-#welcome{
-    padding: 30px 0;
-    margin: 0;
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
 
-}
-#left-about, #right-about{
-    width: 100%;
-    float: left;
-    padding: 0;
-}
-#center-about{
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
+    }
 
-}
-hr{
-    display: none;
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
 
+    }
+
+    #left-about,
+    #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+
+    }
+    #Times > div{
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+        
+    }
+
+    hr {
+        display: none;
+
+    }
 }
-}
+
 /*  For medium screen sizes form 950px wide and down  */
 
-@media  screen and (max-width: 950px ) {
-    
-    #menu{
+@media screen and (max-width: 950px) {
+
+    #menu {
         clear: left;
         float: left;
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
     }
-    #cover-text{
+
+    #cover-text {
         left: 0;
 
     }
-    #club-ethos{
+
+    #club-ethos {
         width: 90%;
         height: 1200px;
         margin: 0 auto;
 
     }
-    .left-about-heading, .right-about-heading{
+
+    .left-about-heading,
+    .right-about-heading {
         width: inherit;
 
     }
-    .left-about-heading h2, .right-about-heading h2{
+
+    .left-about-heading h2,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
-    .left-about-heading p, .right-about-heading p {
-text-align: center;
-padding: 0 20px;
+
+    .left-about-heading p,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
     }
 
 }
-
-

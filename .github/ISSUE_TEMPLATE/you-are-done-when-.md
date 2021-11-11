@@ -1,6 +1,6 @@
 ---
 name: 'You are Done when:'
-about: To tell the user when their report in complete.
+about: " their report in complete."
 title: ''
 labels: ''
 assignees: ''
@@ -11,3 +11,7 @@ assignees: ''
    + Clear
    + Objective
     + Measurable
+
+* Task did you use the 3 pass Cerita keywords in your report? :
+- [x] Yes
+- [] No
